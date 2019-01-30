@@ -41,7 +41,7 @@ class TargetSpaceTest extends BaseTest {
     val result = ts.randomSample()
     val expected = Array(7.57790,0.14100808)
 
-    assert(~=(result, expected, 0.0001))
+    assert(~=(result, expected, 0.001))
   }
 
 }

@@ -17,7 +17,6 @@ class TargetSpace(func: (Array[Double]) => Double, bounds: Array[ParamMap], rand
     val upper = bounds.last.toSeq.map{
       x => fromAnyValueToDouble(x.value)}.toArray
     val ranges = lower.zip(upper)
-    ranges.foreach(println)
     ranges
   }
 
